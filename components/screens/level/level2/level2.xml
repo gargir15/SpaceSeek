@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="level2_screen" extends="Group" initialFocus="answer2ButtonGroup">
+    <script type="text/brightscript" uri="pkg:/components/screens/level/level2/level2.brs" />
+    
+    <interface>
+        <field id="task" type="node" />
+        <field id="switchToLevelScreen2" type="boolean" alias="backButton2.buttonSelected"/>
+    </interface>
+    
+    <children>
+         <Video 
+            id = "video"
+            width="1280"
+            height="720"
+            translation="[0,0]"
+            visible="false"
+            />
+
+        <Poster
+            id = "level_2_screen_bg"
+            uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/"
+            width = "1290"
+            height = "720"
+        />
+
+        <Poster
+        id = "whiterecGameScreen"
+        uri = "pkg:/images/QuestionBox.png"
+        translation = "[-250, -100]"
+        height = "500"
+        width = "1750"
+        />
+
+                
+        <Poster
+        id = "whiterecGameScreen2"
+        uri = "pkg:/images/QuestionBox.png"
+        translation = "[395, 125]"
+        height = "500"
+        width = "550"
+        />
+        
+        <Label
+            translation = "[130,125]"
+            id = "question"
+            color = "0xab7fc7"
+            width = "1000"
+            wrap = "true"
+            text = "lalalala"
+            />
+
+        <ButtonGroup
+            id="answer2ButtonGroup" 
+            visible="false"
+            maxwidth="2000" 
+            minwidth="350"
+            buttonheight="70"
+            translation = "[500, 295]"
+            textcolor="0x50ad4b"
+            focusedtextcolor="0xab7fc7" 
+            iconUri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/unfocusedPawPrint_resized.png"
+            focusedIconUri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/focusedPawPrint_resized.png">
+        </ButtonGroup>
+
+        <Poster
+            id = "captainWolf"
+            uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/wolf.png"
+            translation = "[220, 295]"
+            height = "275"
+            width = "200"
+        />
+
+        <Poster
+            id = "pepper"
+            uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/panda.png"
+            translation = "[220, 295]"
+            height = "275"
+            width = "200"
+        />
+
+        <Poster
+            id = "Rocky"
+            uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/raccoon.png"
+            translation = "[220, 295]"
+            height = "275"
+            width = "200"
+        />
+
+        <Dialog
+            title="Error"
+            visible="false"
+            id="error_dialog"
+        />
+
+        <buttonGroup 
+            id="backButton2" 
+            buttonHeight="70" 
+            maxwidth="550" 
+            minwidth="250" 
+            textcolor="0xf0b1e5" 
+            focusedtextcolor="0x000000" 
+            focusbutton="1" 
+            translation = "[500, 300]"
+            visible = "false"
+            iconUri="https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/unfocusedPawPrint_resized.png" 
+            focusedIconUri="https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/focusedPawPrint_resized.png"
+      />
+
+      <Label
+       id = "pointsLabel"
+       translation = "[850,75]"
+       width = "800"
+       wrap = "true"
+       text = "Points: " 
+       color = "0x000000"
+       />
+ 
+    </children>
+</component>

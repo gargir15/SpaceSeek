@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="settings_screen"   extends="Group">
+    <script type="text/brightscript" uri="pkg:/components/screens/settings/settings_screen.brs" />
+    
+    <children>
+
+        <Poster
+        id = "settings_bg"
+        translation = "[0, 0]"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/SETTINGS_screen.png"
+        width = "1340"
+        height = "750"
+        />
+
+        <Label
+        id="header"
+        translation="[75, 75]"
+        color="0xFFFFFF"
+        font="font:LargeBoldSystemFont"
+        text="-"/>
+
+    </children>
+</component>
+

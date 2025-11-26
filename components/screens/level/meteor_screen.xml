@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="meteor_screen" extends="Group" initialFocus="backButton">
+    <script type="text/brightscript" uri="pkg:/components/screens/level/meteor_screen.brs" />
+    
+    <interface>
+        <field id="task" type="node" />
+    </interface>
+    
+    <children>
+        <Poster
+            id = "game_screen_bg"
+            uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/"
+        />
+
+        <Poster
+        id = "levelbg"
+        translation = "[0, 0]"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/gameBack.png"
+        width = "1290"
+        height = "750"
+        />
+
+        <Label
+        id = "bonusPoints"
+        text = "Points: " 
+        translation = "[885, 150]"
+        color = "0xffffff"
+        width = "800"
+        wrap = "true"
+
+        />
+
+        <Poster
+            id = "captainWolf"
+            uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/wolfBucket.png"
+            translation = "[220, 295]"
+            height = "275"
+            width = "200"
+        />
+
+        <Poster
+            id = "pepper"
+            uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/pepperBucket.png"
+            translation = "[540, 295]"
+            height = "275"
+            width = "200"
+        />
+
+        <Poster
+            id = "Rocky"
+            uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/raccoonBucket.png"
+            translation = "[860, 295]"
+            height = "275"
+            width = "200"
+        />
+
+        <Dialog
+            title="Error"
+            visible="false"
+            id="error_dialog"
+        />
+
+        <buttonGroup 
+            id="backButton" 
+            buttonHeight="70" 
+            maxwidth="550" 
+            minwidth="250" 
+            textcolor="0xf0b1e5" 
+            focusedtextcolor="0x000000" 
+            focusbutton="1" 
+            visible = "false"
+            iconUri="https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/unfocusedPawPrint_resized.png" 
+            focusedIconUri="https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/focusedPawPrint_resized.png"
+      />
+
+      <Poster
+        id = "rocket1"
+        translation = "[400,  295]"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/Glass1.png"
+        width = "75"
+        height = "75"
+    />
+
+    <Poster
+        id = "rocket2"
+        translation = "[300,  295]"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/Glass2.png"
+        width = "75"
+        height = "75"
+        visible = "false"
+    />
+
+    <Poster
+        id = "rocket3"
+        translation = "[600,  295]"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/Glass3.png"
+        width = "75"
+        height = "75"
+        visible = "false"
+    />
+
+    <Poster
+        id = "rocket4"
+        translation = "[600,  295]"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/GoldApple.png"
+        width = "75"
+        height = "75"
+        visible = "false"
+    />
+
+    <Poster
+        id = "rocket5"
+        translation = "[600,  295]"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/Metal1.png"
+        width = "75"
+        height = "75"
+        visible = "false"
+    />
+
+    <Poster
+        id = "rocket6"
+        translation = "[600,  295]"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/Metal2.png"
+        width = "75"
+        height = "75"
+        visible = "false"
+    />
+
+    <Poster
+        id = "rocket7"
+        translation = "[600,  295]"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/Metal3.png"
+        width = "75"
+        height = "75"
+        visible = "false"
+    />
+
+    <Poster
+        id = "rocket8"
+        translation = "[600,  295]"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/Metal4.png"
+        width = "75"
+        height = "75"
+        visible = "false"
+    />
+    <Animation
+            id="testAnimation"
+            duration="10"
+            repeat="false"
+            control="start"
+            easeFunction="linear">
+            <Vector2DFieldInterpolator
+                id = "testVector2D"
+                key="[0.0, 0.5, 1.0]"
+                keyValue="[ [318.0, 0], [318.0, 350.0], [318.0, 750] ]"
+                fieldToInterp="rocket1.translation"   />
+    </Animation>
+ 
+    </children>
+</component>

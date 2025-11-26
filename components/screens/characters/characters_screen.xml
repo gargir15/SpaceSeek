@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="characters_screen" extends="Group">
+    <script type="text/brightscript" uri="pkg:/components/screens/characters/characters_screen.brs" />
+    <children>
+        <Poster
+        id = "costumeBG"
+        translation = "[0, 0]"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/Characters_screen.png"
+        width = "1340"
+        height = "750"
+        />
+
+        <Poster
+        id = "captainWolf"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/wolf.png"
+        translation = "[220,  295]"
+        height = "275"
+        width = "200"
+        />
+
+        <Poster
+        id = "pepper"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/panda.png"
+        translation = "[540, 295]"
+        height = "275"
+        width = "200"
+        />
+
+        <Poster
+        id = "Rocky"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/raccoon.png"
+        translation = "[860, 295]"
+        height = "275"
+        width = "200"
+        />
+
+        <Poster
+        id = "whiterec1"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/WhiteRec.png"
+        translation = "[10, 550]"
+        height = "100"
+        width = "425"
+        />
+
+        <Poster
+        id = "whiterec2"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/WhiteRec.png"
+        translation = "[435, 550]"
+        height = "100"
+        width = "425"
+        />
+
+        <Poster
+        id = "whiterec3"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/WhiteRec.png"
+        translation = "[860, 550]"
+        height = "100"
+        width = "425"
+        />
+
+
+       <buttonGroup
+       layoutDirection="horiz"
+        id="character_list"
+        buttonHeight="100"
+        maxwidth= "425" 
+        minwidth = "425"
+        focusBitmapUri = "pkg:/images/notexist.png"
+        textcolor="0xf0b1e5"
+        focusedtextcolor="0xc4a416" 
+        focusbutton="1"
+        translation = "[10, 550]"
+        iconUri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/unfocusedPawPrint_resized.png"
+        focusedIconUri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/focusedPawPrint_resized.png"
+        />
+
+        <Dialog
+            title="Error"
+            visible="false"
+            id="error_dialog"
+        />
+
+    </children>
+</component>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="home_scene" extends="Scene" initialFocus="category_screen">
+  <script type="text/brightscript" uri="pkg:/components/home_scene.brs" />
+ 
+  <children>
+    <category_screen
+      id="category_screen"
+      visible="true"
+      translation="[0,0]" />
+
+    <level_screen
+      id="level_screen"
+      visible="false"
+      translation="[0,0]" />
+
+      <settings_screen
+      id="settings_screen"
+      visible="false"
+      translation="[0,0]" />
+
+      <characters_screen
+      id="characters_screen"
+      visible="false"
+      translation="[0,0]" />
+
+      <meteor_screen
+      id="meteor_screen"
+      visible="false"
+      translation="[0,0]" />
+
+      <level1_screen
+      id="level1_screen"
+      visible="false"
+      translation="[0,0]" />
+
+      <level2_screen
+      id="level2_screen"
+      visible="false"
+      translation="[0,0]" />
+
+      <level3_screen
+      id="level3_screen"
+      visible="false"
+      translation="[0,0]" />
+
+      <Video 
+      id = "video"
+      width="1280"
+      height="720"
+      translation="[0,0]"
+      visible="true"/>
+
+      <buttonGroup 
+        id="category_list" 
+        buttonHeight="70" 
+        maxwidth="800" 
+        minwidth="490" 
+        textcolor="0xf0b1e5" 
+        focusedtextcolor="0xfcfc88"
+        focusBitmapUri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/buttonbg.png" 
+        focusbutton="1" 
+        translation="[20,460]" 
+        iconUri="https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/unfocusedPawPrint_resized.png" 
+        focusedIconUri="https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/focusedPawPrint_resized.png"
+      />
+
+      <buttonGroup
+        id="settings_list"
+        buttonHeight="70"
+        maxwidth= "800" 
+        minwidth = "350"
+        textcolor="0x50ad4b"
+        focusedtextcolor="0xab7fc7" 
+        translation = "[500, 450]"
+        focusBitmapUri = "pkg:/images/greenButtonBg.png"
+        focusbutton="1"
+        visible="false"
+        iconUri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/unfocusedPawPrint_resized.png"
+        focusedIconUri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/focusedPawPrint_resized.png"
+        />
+
+      <buttonGroup
+        id="fontSizeButtons"
+        buttonHeight="70"
+        maxwidth= "800" 
+        minwidth = "350"
+        textcolor="0x50ad4b"
+        focusedtextcolor="0xab7fc7" 
+        translation = "[500, 450]"
+        visible="false"
+        focusBitmapUri = "pkg:/images/greenButtonBg.png"
+        focusbutton="1"
+        iconUri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/unfocusedPawPrint_resized.png"
+        focusedIconUri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/focusedPawPrint_resized.png"
+      />
+
+      <buttonGroup
+        id="languageButtons"
+        buttonHeight="70"
+        maxwidth= "800"
+        minwidth = "350"
+        textcolor="0x50ad4b"
+        focusedtextcolor="0xab7fc7"
+        translation = "[500, 450]"
+        visible="false"
+        focusBitmapUri = "pkg:/images/greenButtonBg.png"
+        focusbutton="1"
+        iconUri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/unfocusedPawPrint_resized.png"
+        focusedIconUri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/focusedPawPrint_resized.png"
+      />
+
+      <buttonGroup 
+        id="levelButtons" 
+        addItemSpacingAfterChild = "true"
+        itemSpacing = "[2000]" 
+        textcolor="0xadd8e6" 
+        focusedtextcolor="0x88fc8c"
+        focusBitmapUri = "pkg:/images/notexist.png"
+        layoutDirection="horiz"
+        focusbutton="1" 
+        translation="[130,450]" 
+        buttonHeight="50"
+        maxwidth= "800" 
+        minwidth = "370"
+        iconUri="https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/lightbluepaw.png" 
+        focusedIconUri="https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/lightbluepaw.png"
+      />
+
+    <buttonGroup 
+      id="skipButton" 
+      buttonHeight="70" 
+      maxwidth="550" 
+      minwidth="250" 
+      textcolor="0xf0b1e5" 
+      focusedtextcolor="0x000000" 
+      focusbutton="1" 
+      translation="[950, 500]" 
+      iconUri="https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/unfocusedPawPrint_resized.png" 
+      focusedIconUri="https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/focusedPawPrint_resized.png"
+      />
+
+      <Dialog
+            title="Error"
+            visible="false"
+            id="error_dialog"
+        />
+
+
+  </children>
+</component>

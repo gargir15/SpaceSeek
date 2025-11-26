@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component   name="level_screen"   extends="Group">
+    <script type="text/brightscript" uri="pkg:/components/screens/level/level_screen.brs" />
+    
+    <interface>
+        <field id="task" type="node" />
+        <field id="switchToMeteorScreen" type="boolean" alias="meteorButton.buttonSelected"/>
+    </interface>
+
+    <children>
+        <Poster
+        id = "levelbg"
+        translation = "[0, 0]"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/levelbg.png"
+        width = "1290"
+        height = "750"
+        />
+
+        <Poster
+        id = "level3_bg"
+        translation = "[850, 300]"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/level_three_bg.png"
+        width = "300"
+        height = "150"
+        />
+
+        <Poster
+        id = "level2_bg"
+        translation = "[490, 300]"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/level_two_bg.png"
+        width = "300"
+        height = "150"
+        />
+
+        <Poster
+        id = "level1bg"
+        translation = "[130, 300]"
+        uri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/level_one_bg.jpeg"
+        width = "300"
+        height = "150"
+        />
+
+        <ButtonGroup
+            id="meteorButton" 
+            visible="false"
+            maxwidth="2000" 
+            minwidth="200"
+            buttonheight="70"
+            translation="[525, 490]" 
+            textcolor="0x50ad4b"
+            iconUri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/unfocusedPawPrint_resized.png"
+            focusedIconUri = "https://kingsfortress-3e1c1a41ac2a.herokuapp.com/images/focusedPawPrint_resized.png"
+        />
+        
+
+    </children>
+</component>
